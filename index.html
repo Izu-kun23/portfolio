@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I.T.STARK PERSONAL PORTFOLIO</title>
+    <!-- Iconscout -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- GOOGLEFONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ANIMATE ON SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!---=============================== NAVBAR ==============================-->
+    <nav>
+      <div class="container nav_container">
+        <a href="index.html">I.T.STARK</a>
+        <button class="nav_theme-btn">
+          <i class="uil uil-moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!---=============================== FLOATING NAVBAR ==============================-->
+    <menu class="floating_nav">
+      <a href="#" class="active"><i class="uil uil-estate"></i></a>
+      <a href="#resume"><i class="uil uil-clipboard-alt"></i></a>
+      <a href="#projects"><i class="uil uil-bag"></i></a>
+      <a href="#faqs"><i class="uil uil-smile-beam"></i></a>
+      <a href="#contact"><i class="uil uil-phone"></i></a>
+    </menu>
+
+    <!---=============================== HEADER ==============================-->
+    <header>
+      <div class="header_container">
+        <div class="header_image" data-aos="fade-up" data-aos-delay="800">
+          <img src="../assets/Toshiro Hitsugaya Bleach.jpg" alt="Header Image" />
+        </div>
+        <h5 data-aos="fade-in">HI, I AM IZUCHUKWU TONY</h5>
+        <h1 data-aos="fade-in">FULLSTACK <span>SOFTWARE DEVELOPER</span></h1>
+        <p data-aos="fade-in">
+          Passionate about crafting seamless user experiences and building new
+          technologies, driven by a commitment to continuous improvement and
+          delivering high-quality software solutions.
+        </p>
+        <div class="header_cta" data-aos="fade-in">
+          <a href="#projects" class="btn">MY PROJECTS</a>
+          <a href="#contact" class="btn primary">HIRE ME</a>
+        </div>
+
+        <menu class="header_socials">
+          <a href="https://github.com/Izu-kun23" aria-label="GitHub"
+            ><i class="uil uil-github-alt"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/_izumaki_15/"
+            aria-label="Instagram"
+            ><i class="uil uil-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/izuchukwu-tony-9aa592218/"
+            aria-label="LinkedIn"
+            ><i class="uil uil-linkedin-alt"></i
+          ></a>
+        </menu>
+      </div>
+    </header>
+
+    <!---=============================== RESUME ==============================-->
+    <section id="resume">
+      <div class="container resume_container" data-aos="fade-in" data-aos-delay="200">
+        <div class="resume_left">
+          <h1>Why Hire Me?</h1>
+<p>
+ 
+</p>
+<p>
+
+</p>
+          <menu>
+            <button class="btn primary experience_btn">Experience</button>
+            <button class="btn education_btn">Education</button>
+            <button class="btn skills_btn">Skills</button>
+            <button class="btn about_btn">About Me</button>
+          </menu>
+        </div>
+
+        <div class="resume_right"></div>
+      </div>
+    </section>
+
+    <!---=============================== PROJECTS ==============================-->
+    <section class="projects" id="projects" data-aos="fade-up" data-aos-delay="200">
+      <h1>RECENT PROJECTS</h1>
+      <p>
+        Here are some of the latest projects I've been working on.
+      
+      <menu class="projects_categories">
+        <button class="btn primary" data-filter="*">ALL</button>
+        <button class="btn" data-filter=".frontend">FRONTEND</button>
+        <button class="btn" data-filter=".backend">BACKEND</button>
+        <button class="btn" data-filter=".fullstack">FULLSTACK</button>
+      </menu>
+      <div class="container projects_container">
+        <article class="project mix fullstack" data-order="1">
+          <div class="project_image">
+            <img src="./assets/EMS.png" alt="Project One" />
+          </div>
+          <h5>EMPLOYEE MANAGEMENT SYSTEM (Fullstack)</h5>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            non quaerat possimus? Itaque, molestiae magni. Voluptas quos quo,
+            minus repellat tempore hic inventore corrupti repudiandae? Porro quo
+            debitis sapiente libero!
+          </p>
+          <div class="project_cta">
+            <a href="./construction/index.html" class="btn primary" target="_blank"
+              ><i class="uil uil-external-link-alt"></i
+            ></a>
+          </div>
+        </article>
+        
+        <article class="project mix fullstack" data-order="2">
+          <div class="project_image">
+            <img src="./assets/restoran.png" alt="Project Two" />
+          </div>
+          <h5>Restaurant (Fullstack)</h5>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            non quaerat possimus? Itaque, molestiae magni. Voluptas quos quo,
+            minus repellat tempore hic inventore corrupti repudiandae? Porro quo
+            debitis sapiente libero!
+          </p>
+          <div class="project_cta">
+            <a href="./construction/index.html" class="btn primary" target="_blank"
+              ><i class="uil uil-external-link-alt"></i
+            ></a>
+           
+          </div>
+        </article>
+        <article class="project mix backend" data-order="3">
+          <div class="project_image">
+            <img src="./assets/game.png" alt="Project Three" />
+          </div>
+          <h5>JavaScript Game (Backend)</h5>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            non quaerat possimus? Itaque, molestiae magni. Voluptas quos quo,
+            minus repellat tempore hic inventore corrupti repudiandae? Porro quo
+            debitis sapiente libero!
+          </p>
+          <div class="project_cta">
+            <a href="./construction/index.html" class="btn primary" target="_blank"
+              ><i class="uil uil-external-link-alt"></i
+            ></a>
+            
+          </div>
+        </article>
+        <article class="project mix frontend" data-order="2">
+          <div class="project_image">
+            <img src="./assets/Fake.jpg" alt="Project Four" />
+          </div>
+          <h5>Twitter Dupe (Frontend)</h5>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            non quaerat possimus? Itaque, molestiae magni. Voluptas quos quo,
+            minus repellat tempore hic inventore corrupti repudiandae? Porro quo
+            debitis sapiente libero!
+          </p>
+          <div class="project_cta">
+            <a href="./construction/index.html" class="btn primary" target="_blank"
+              ><i class="uil uil-external-link-alt"></i
+            ></a>
+          </div>
+       
+      </div>
+    </section>
+
+
+    <!---=============================== CONTACT ==============================-->
+    <section id="contact">
+      <div class="container contact_container">
+        <h1>Get in Touch</h1>
+        <p>
+            Whether you have a question, a project idea, or just want to say hello, feel free to reach out. I'm always excited to connect with like-minded professionals and discuss new opportunities.
+        </p>
+        <menu class="contact_options">
+          <a href="mailto:izuchukwuonuoha6@gmail.com" class="contact_option" target="_blank">
+              <i class="uil uil-envelope"></i>
+              
+          </a>
+          <a href="https://wa.me/+447763902623" class="contact_option" target="_blank">
+              <i class="uil uil-whatsapp"></i>
+              
+          </a>
+          <a href="tel:+447763902623" class="contact_option" target="_blank">
+              <i class="uil uil-phone"></i>
+              
+          </a>
+      </menu>
+
+        <form action="https://formsubmit.co/izuchukwuonuoha6@gmail.com" method="POST" data-aos="fade-up" data-aos-delay="200">
+          <input type="text" name="Name" placeholder="Full Name">
+          <input type="text" name="Email" placeholder="Email Address">
+          <textarea rows="7" name="Message" placeholder="Message"></textarea>
+          <button type="submit" class="btn primary">SEND</button>
+
+        </form>
+      </div>
+    </section>
+
+
+    <script src="./mix/dist/mixitup.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({duration:2000, offset:80});
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>
+
+
