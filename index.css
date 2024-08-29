@@ -543,16 +543,18 @@ form button{
 
 
 /*=============================== MEDIA QUERIES ==============================*/
-@media screen and (max-width:1500px) {
-    body{
-        font-size:1rem
+
+@media screen and (max-width: 1500px) {
+    body {
+        font-size: 1rem;
     }
 
-    .container{
-        width:var(--container-w-sm);
+    .container {
+        width: var(--container-w-sm);
     }
 
-    section > h1, section > p {
+    section > h1,
+    section > p {
         width: var(--container-w-sm);
     }
 
@@ -560,50 +562,60 @@ form button{
         height: 4rem;
     }
 
-    .header_container{
-        width:90%
+    .header_container {
+        width: 90%;
     }
 
-    .header_container p{
+    .header_container p {
         margin-top: 0.4rem;
     }
-    .header_socials{
+
+    .header_socials {
         display: none;
     }
 
-    .resume_container{
+    .resume_container {
         grid-template-columns: 1fr;
-        gap: 3rem
+        gap: 3rem;
     }
 
-.resume_left menu{
-    gap:0.7rem;
-}
+    .resume_left menu {
+        gap: 0.7rem;
+    }
 
-.resume_right.skills ul{
-    grid-template-columns:repeat(3, 1fr);
-    gap: 1.2rem;
-}
+    .resume_right {
+        width: 100%; /* Make sure it takes full width on small screens */
+        overflow-x: hidden; /* Prevent horizontal overflow */
+        padding: 1rem; /* Add some padding for a better fit */
+    }
 
-/* .resume_right.about ul {
-    grid-template-columns: 1fr;
+    .resume_right.skills ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
 
-} */
+    .resume_right.about ul {
+        grid-template-columns: 1fr;
+    }
 
-.projects_categories{
-    margin-top:2.3rem;
-}
+    .resume_right.education ul {
+        grid-template-columns: 1fr; /* Ensure content fits within the screen */
+        gap: 1.2rem; /* Add some gap for better layout */
+    }
 
-.projects_container{
-    margin-top: 3rem;
-}
+    .projects_categories {
+        margin-top: 2.3rem;
+    }
 
-.faqs_container{
-    grid-template-columns: 1fr;
-}
+    .projects_container {
+        margin-top: 3rem;
+    }
 
-form button{
-    width: 100%;
-}
+    .faqs_container {
+        grid-template-columns: 1fr;
+    }
 
+    form button {
+        width: 100%;
+    }
 }
