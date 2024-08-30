@@ -126,7 +126,7 @@ const aboutContent = `<h4>ABOUT ME</h4>
             </li>
             <li>
               <h6>YEARS OF EXPERIENCE:</h6>
-              <h5>4 YEARS</h5>
+              <h5>3 YEARS</h5>
             </li>
             <li>
               <h6>NATIONALITY:</h6>
