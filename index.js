@@ -117,7 +117,7 @@ skillsBtn.addEventListener('click', () => {
 // About Me
 const aboutContent = `<h4>ABOUT ME</h4>
           <p>
-               Enthusiastic full-stack developer with 4 years of experience in creating dynamic and responsive web applications.
+               Enthusiastic full-stack developer with 3 years of experience in creating dynamic and responsive web applications.
           </p>
           <ul>
             <li>
