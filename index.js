@@ -49,6 +49,11 @@ const experienceContent = `  <h4>EXPERIENCE</h4>
               <h5>IT PROFESSIONAL</h5>
               <p>NOVACROFT</p>
             </li>
+            <li>
+              <h6>OCT 2024 - MARCH 2025</h6>
+              <h5>SOFTWARE DEVELOPMENT ASSISTANT</h5>
+              <p>FOREVER SAKE</p>
+            </li>
 
           </ul>
 `;
