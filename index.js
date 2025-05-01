@@ -40,15 +40,16 @@ const experienceContent = `  <h4>EXPERIENCE</h4>
               <p>BARCLAY CARD</p>
             </li>
             <li>
+              <h6>MAY 2024 - SEPT 2024</h6>
+              <h5>SOFTWARE ENGINEERING INTERN</h5>
+              <p>CALAYA ENGINEERING LTD</p>
+            </li>
+            <li>
               <h6>SEPT 2024 - FEB 2025</h6>
               <h5>IT PROFESSIONAL</h5>
               <p>NOVACROFT</p>
             </li>
-            <li>
-              <h6>PRESENT</h6>
-              <h5>SOFTWARE ENGINEERING INTERN</h5>
-              <p>CALAYA ENGINEERING LTD</p>
-            </li>
+
           </ul>
 `;
 
