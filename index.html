@@ -191,6 +191,9 @@
   margin-bottom: 1rem;
   display: block;
 }
+  body.modal-open {
+  overflow: hidden;
+}
 
   .modal-content .close {
     position: absolute;
@@ -207,33 +210,39 @@
 
 <!-- =============== MODAL SCRIPT ================== -->
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById("projectModal");
-    const modalImg = document.getElementById("modal-img");
-    const modalTitle = document.getElementById("modal-title");
-    const modalDescription = document.getElementById("modal-description");
-    const closeBtn = document.querySelector(".modal .close");
+ document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("projectModal");
+  const modalImg = document.getElementById("modal-img");
+  const modalTitle = document.getElementById("modal-title");
+  const modalDescription = document.getElementById("modal-description");
+  const closeBtn = document.querySelector(".modal .close");
 
-    document.querySelectorAll(".project").forEach(project => {
-      project.addEventListener("click", () => {
-        modalImg.src = project.getAttribute("data-image");
-        modalTitle.textContent = project.getAttribute("data-title");
-        modalDescription.textContent = project.getAttribute("data-description");
+  const openModal = () => {
+    modal.classList.add("show");
+    document.body.classList.add("modal-open");
+  };
 
-        modal.classList.add("show");
-      });
-    });
+  const closeModal = () => {
+    modal.classList.remove("show");
+    document.body.classList.remove("modal-open");
+  };
 
-    closeBtn.addEventListener("click", () => {
-      modal.classList.remove("show");
-    });
-
-    window.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        modal.classList.remove("show");
-      }
+  document.querySelectorAll(".project").forEach(project => {
+    project.addEventListener("click", () => {
+      modalImg.src = project.getAttribute("data-image");
+      modalTitle.textContent = project.getAttribute("data-title");
+      modalDescription.textContent = project.getAttribute("data-description");
+      openModal();
     });
   });
+
+  closeBtn.addEventListener("click", closeModal);
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+});
 </script>
     
 
