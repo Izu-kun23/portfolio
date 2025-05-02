@@ -102,102 +102,83 @@
       </div>
     </section>
 
-    <!---=============================== PROJECTS ==============================-->
-    <section class="projects" id="projects" data-aos="fade-up" data-aos-delay="200">
-      <h1>RECENT PROJECTS</h1>
-      <p>
-        Here are some of the latest projects I've been working on.
-      
-      <menu class="projects_categories">
-        <button class="btn primary" data-filter="*">ALL</button>
-        <button class="btn" data-filter=".frontend">FRONTEND</button>
-        <button class="btn" data-filter=".backend">BACKEND</button>
-        <button class="btn" data-filter=".fullstack">FULLSTACK</button>
-      </menu>
-      <div class="container projects_container">
-        <article class="project mix fullstack" data-order="1">
-          <div class="project_image">
-            <img src="./assets/EMS.png" alt="Project One" />
-          </div>
-          <h5>EMPLOYEE MANAGEMENT SYSTEM (Fullstack)</h5>
-          <p>
-            This Employee Management System is designed to streamline workforce management within a company.  
-  It facilitates effective communication between employees and employers, ensuring smooth operations  
-  and improved productivity.
-          </p>
-          <div class="project_cta">
-            <a href="./construction/index.html" class="btn primary" target="_blank"
-              ><i class="uil uil-external-link-alt"></i
-            ></a>
-          </div>
-        </article>
+   <!--============================== PROJECTS ==============================-->
+<section class="projects" id="projects" data-aos="fade-up" data-aos-delay="200">
+  <h1>RECENT PROJECTS</h1>
+  <p>Here are some of the latest projects I've been working on.</p>
 
-        <article class="project mix fullstack" data-order="1">
-          <div class="project_image">
-            <img src="./assets/home.png" alt="Project One" />
-          </div>
-          <h5>Online Marketplace Application (Fullstack)</h5>
-          <p>
-            A cross-platform mobile application intended to connect small businesses and consumers across Nigeria. One.NG is being developed to help vendors showcase services, manage profiles, and interact with customers in real time. It is designed to support geo-based discovery, in-app messaging, and local payments — with the broader goal of helping digitize Nigeria’s informal economy and empower small-scale entrepreneurs.
-          </p>
-          <div class="project_cta">
-            <a href="./construction/index.html" class="btn primary" target="_blank"
-              ><i class="uil uil-external-link-alt"></i
-            ></a>
-          </div>
-        </article>
-        
-        <article class="project mix fullstack" data-order="2">
-          <div class="project_image">
-            <img src="./assets/hospitalms.png" alt="Project Two" />
-          </div>
-          <h5>Hospital Management System (Fullstack)</h5>
-          <p>
-            I developed this Hospital Management System to allow customers to book appointments with doctors seamlessly.  
-  It also facilitates effective communication between users and their hospitals, ensuring a smooth and efficient  
-  healthcare experience.
-          </p>
-          <div class="project_cta">
-            <a href="./construction/index.html" class="btn primary" target="_blank"
-              ><i class="uil uil-external-link-alt"></i
-            ></a>
-           
-          </div>
-        </article>
-        <article class="project mix backend" data-order="3">
-          <div class="project_image">
-            <img src="./assets/game.png" alt="Project Three" />
-          </div>
-          <h5>JavaScript Game (Backend)</h5>
-          <p>
-            This JavaScript game challenges players to control a character and navigate through an environment while avoiding falling obstacles.  
-  The game tests reflexes and coordination, providing an engaging and interactive experience.
-          </p>
-          <div class="project_cta">
-            <a href="./construction/index.html" class="btn primary" target="_blank"
-              ><i class="uil uil-external-link-alt"></i
-            ></a>
-            
-          </div>
-        </article>
-        <article class="project mix frontend" data-order="2">
-          <div class="project_image">
-            <img src="./assets/Fake.jpg" alt="Project Four" />
-          </div>
-          <h5>Twitter Dupe (Frontend)</h5>
-          <p>
-             This project is a duplicate version of X (formerly known as Twitter), built using React.js and MongoDB.  
-  It allows users to post, like, comment, and follow other users, providing an interactive social media experience.
-          </p>
-          <div class="project_cta">
-            <a href="./construction/index.html" class="btn primary" target="_blank"
-              ><i class="uil uil-external-link-alt"></i
-            ></a>
-          </div>
-       
-      </div>
-    </section>
+  <menu class="projects_categories">
+    <button class="btn primary" data-filter="*">ALL</button>
+    <button class="btn" data-filter=".frontend">FRONTEND</button>
+    <button class="btn" data-filter=".backend">BACKEND</button>
+    <button class="btn" data-filter=".fullstack">FULLSTACK</button>
+  </menu>
 
+  <div class="container projects_container">
+    <article class="project mix fullstack" data-title="Employee Management System" data-description="This Employee Management System is designed to streamline workforce management within a company. It facilitates effective communication between employees and employers, ensuring smooth operations and improved productivity." data-image="./assets/EMS.png">
+      <div class="project_image"><img src="./assets/EMS.png" alt="EMS" /></div>
+      <h5>EMPLOYEE MANAGEMENT SYSTEM</h5>
+    </article>
+
+    <article class="project mix fullstack" data-title="Online Marketplace (One.NG)" data-description="A cross-platform mobile application intended to connect small businesses and consumers across Nigeria. One.NG is being developed to help vendors showcase services, manage profiles, and interact with customers in real time. It is designed to support geo-based discovery, in-app messaging, and local payments — with the broader goal of helping digitize Nigeria’s informal economy and empower small-scale entrepreneurs." data-image="./assets/home.png">
+      <div class="project_image"><img src="./assets/home.png" alt="One NG" /></div>
+      <h5>ONLINE MARKETPLACE (ONE.NG)</h5>
+    </article>
+
+    <article class="project mix fullstack" data-title="Hospital Management System" data-description="This Hospital Management System allows users to book appointments, while doctors, pharmacists, and admins manage bookings, payments, and patient data via dedicated dashboards. Stripe integration supports seamless transactions." data-image="./assets/hospitalms.png">
+      <div class="project_image"><img src="./assets/hospitalms.png" alt="Hospital MS" /></div>
+      <h5>HOSPITAL MANAGEMENT SYSTEM</h5>
+    </article>
+
+    <article class="project mix backend" data-title="JavaScript Game" data-description="A browser-based game where players dodge falling obstacles. Designed to test reflexes and timing, built with vanilla JS." data-image="./assets/game.png">
+      <div class="project_image"><img src="./assets/game.png" alt="Game" /></div>
+      <h5>JAVASCRIPT GAME</h5>
+    </article>
+
+    <article class="project mix frontend" data-title="Twitter Dupe (React)" data-description="A frontend clone of X (formerly Twitter), built using React and MongoDB. Features include posting, liking, commenting, and following users." data-image="./assets/Fake.jpg">
+      <div class="project_image"><img src="./assets/Fake.jpg" alt="Twitter Dupe" /></div>
+      <h5>TWITTER DUPE</h5>
+    </article>
+  </div>
+</section>
+
+<!-- =============== MODAL ================== -->
+<div class="modal" id="projectModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modal-img" src="" alt="Project Image" />
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+<!-- =============== MODAL SCRIPT ================== -->
+<style>
+  .modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background: rgba(0,0,0,0.7); }
+  .modal-content { background: white; margin: 10% auto; padding: 20px; width: 80%; max-width: 600px; border-radius: 10px; position: relative; }
+  .modal-content img { width: 100%; border-radius: 10px; margin-bottom: 1rem; }
+  .modal-content .close { position: absolute; top: 10px; right: 15px; font-size: 28px; cursor: pointer; }
+</style>
+
+<script>
+  const modal = document.getElementById("projectModal");
+  const modalImg = document.getElementById("modal-img");
+  const modalTitle = document.getElementById("modal-title");
+  const modalDescription = document.getElementById("modal-description");
+  const closeBtn = document.querySelector(".modal .close");
+
+  document.querySelectorAll(".project").forEach(project => {
+    project.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalTitle.innerText = project.getAttribute("data-title");
+      modalDescription.innerText = project.getAttribute("data-description");
+      modalImg.src = project.getAttribute("data-image");
+    });
+  });
+
+  closeBtn.onclick = () => modal.style.display = "none";
+  window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+</script>
 
     <!---=============================== CONTACT ==============================-->
     <section id="contact">
