@@ -480,6 +480,15 @@ header{
     padding: 0.6rem 1rem
 }
 
+   .dark-theme-variables .modal-content {
+  background: var(--color-gray-100); /* or a darker custom color */
+  color: var(--color-gray-800); /* light text color for contrast */
+}
+
+.dark-theme-variables .modal-content .close {
+  color: var(--color-gray-800); /* close button color */
+}
+
 /*=============================== CONTACT ==============================*/
 .contact_container {
     width: 100%; /* Make it responsive */
@@ -619,13 +628,6 @@ form button{
         width: 100%;
     }
 
-    .dark-theme-variables .modal-content {
-  background: var(--color-gray-100); /* or a darker custom color */
-  color: var(--color-gray-800); /* light text color for contrast */
-}
-
-.dark-theme-variables .modal-content .close {
-  color: var(--color-gray-800); /* close button color */
-}
+ 
 
 }
