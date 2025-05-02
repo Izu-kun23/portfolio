@@ -155,35 +155,34 @@
 <!-- =============== MODAL STYLES ================== -->
 <style>
   .modal {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  position: fixed;
-  z-index: 9999;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  overflow: auto;
-  background: rgba(0, 0, 0, 0.7);
-}
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.7);
+  }
 
-.modal.show {
-  display: block;
-  opacity: 1;
-}
+  .modal.show {
+    display: block;
+    opacity: 1;
+  }
 
-.modal-content {
-  background: white;
-  color: #333;
-  margin: 10% auto;
-  padding: 20px;
-  width: 90%;
-  max-width: 600px;
-  border-radius: 10px;
-  position: relative;
-  animation: slideIn 0.3s ease;
-}
+  .modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    animation: slideIn 0.3s ease;
+  }
 
-.modal-content img {
+  .modal-content img {
   width: 100%;
   max-height: 400px;
   height: auto;
@@ -192,36 +191,22 @@
   margin-bottom: 1rem;
   display: block;
 }
-
-.modal-content .close {
-  position: absolute;
-  top: 10px; right: 15px;
-  font-size: 28px;
-  cursor: pointer;
-  color: inherit;
-}
-
-body.modal-open {
+  body.modal-open {
   overflow: hidden;
 }
 
-@keyframes slideIn {
-  from { transform: translateY(-20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-/* === DARK MODE SUPPORT === */
-@media (prefers-color-scheme: dark) {
-  .modal-content {
-    background: #1e1e1e;
-    color: #f1f1f1;
-  }
-
   .modal-content .close {
-    color: #f1f1f1;
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 28px;
+    cursor: pointer;
   }
-}
-</style>
+
+  @keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+</style> 
 
 <!-- =============== MODAL SCRIPT ================== -->
 <script>
